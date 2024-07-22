@@ -163,3 +163,63 @@ result = {'type': 'dataframe', 'value': top_5_countries}
 3         Germany   4100
 1  United Kingdom   3200}
 2024-07-22 14:50:27 [INFO] Executing Step 8: ResultParsing
+2024-07-22 15:34:43 [INFO] Question: Which are the top 5 countries by sales?
+2024-07-22 15:34:43 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-07-22 15:34:43 [INFO] Prompt ID: dd258ee7-f03f-4bfe-8782-7e728f8180ac
+2024-07-22 15:34:43 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-07-22 15:34:43 [INFO] Executing Step 0: ValidatePipelineInput
+2024-07-22 15:34:43 [INFO] Executing Step 1: CacheLookup
+2024-07-22 15:34:43 [INFO] Using cached response
+2024-07-22 15:34:43 [INFO] Executing Step 2: PromptGeneration
+2024-07-22 15:34:43 [INFO] Executing Step 2: Skipping...
+2024-07-22 15:34:43 [INFO] Executing Step 3: CodeGenerator
+2024-07-22 15:34:43 [INFO] Executing Step 3: Skipping...
+2024-07-22 15:34:43 [INFO] Executing Step 4: CachePopulation
+2024-07-22 15:34:43 [INFO] Executing Step 4: Skipping...
+2024-07-22 15:34:43 [INFO] Executing Step 5: CodeCleaning
+2024-07-22 15:34:43 [INFO] 
+Code running:
+```
+dfs[0] = dfs[0].sort_values(by='sales', ascending=False)
+top_5_countries = dfs[0].head(5)
+result = {'type': 'dataframe', 'value': top_5_countries}
+        ```
+2024-07-22 15:34:43 [INFO] Executing Step 6: CodeExecution
+2024-07-22 15:34:43 [INFO] Executing Step 7: ResultValidation
+2024-07-22 15:34:43 [INFO] Answer: {'type': 'dataframe', 'value':           country  sales
+9           China   7000
+0   United States   5000
+8           Japan   4500
+3         Germany   4100
+1  United Kingdom   3200}
+2024-07-22 15:34:43 [INFO] Executing Step 8: ResultParsing
+2024-07-22 15:36:17 [INFO] Question: Which are the top 5 countries by sales?
+2024-07-22 15:36:17 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-07-22 15:36:17 [INFO] Prompt ID: 1b0d766c-f1ae-46a1-8fe3-d774cdfbe99e
+2024-07-22 15:36:17 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-07-22 15:36:17 [INFO] Executing Step 0: ValidatePipelineInput
+2024-07-22 15:36:17 [INFO] Executing Step 1: CacheLookup
+2024-07-22 15:36:17 [INFO] Using cached response
+2024-07-22 15:36:17 [INFO] Executing Step 2: PromptGeneration
+2024-07-22 15:36:17 [INFO] Executing Step 2: Skipping...
+2024-07-22 15:36:17 [INFO] Executing Step 3: CodeGenerator
+2024-07-22 15:36:17 [INFO] Executing Step 3: Skipping...
+2024-07-22 15:36:17 [INFO] Executing Step 4: CachePopulation
+2024-07-22 15:36:17 [INFO] Executing Step 4: Skipping...
+2024-07-22 15:36:17 [INFO] Executing Step 5: CodeCleaning
+2024-07-22 15:36:17 [INFO] 
+Code running:
+```
+dfs[0] = dfs[0].sort_values(by='sales', ascending=False)
+top_5_countries = dfs[0].head(5)
+result = {'type': 'dataframe', 'value': top_5_countries}
+        ```
+2024-07-22 15:36:17 [INFO] Executing Step 6: CodeExecution
+2024-07-22 15:36:17 [INFO] Executing Step 7: ResultValidation
+2024-07-22 15:36:17 [INFO] Answer: {'type': 'dataframe', 'value':           country  sales
+9           China   7000
+0   United States   5000
+8           Japan   4500
+3         Germany   4100
+1  United Kingdom   3200}
+2024-07-22 15:36:17 [INFO] Executing Step 8: ResultParsing

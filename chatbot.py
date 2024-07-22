@@ -3,6 +3,7 @@ import pandas as pd
 from pandasai import Agent
 from config import api_key
 
+
 # Sample DataFrame
 sales_by_country = pd.DataFrame({
     "country": ["United States", "United Kingdom", "France", "Germany", "Italy", "Spain", "Canada", "Australia", "Japan", "China"],
@@ -14,6 +15,6 @@ sales_by_country = pd.DataFrame({
 os.environ["PANDASAI_API_KEY"] = api_key
 
 agent = Agent(sales_by_country)
-agent.chat('Which are the top 5 countries by sales?')
+print(agent.chat('Which are the top 5 countries by sales?'))
 ## Output
 # China, United States, Japan, Germany, Australia
