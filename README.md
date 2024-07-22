@@ -12,6 +12,9 @@ This project implements a chatbot using PandasAI, a Python library designed for 
 ## Requirements
 - Python 3.x
 - PandasAI library
+- PyYAML (`pip install pyyaml`)
+- Additional libraries (if any)
+
 
 ## Installation
 1. Clone the repository:
