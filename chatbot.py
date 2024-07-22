@@ -10,7 +10,7 @@ sales_by_country = pd.DataFrame({
 
 # By default, unless you choose a different LLM, it will use BambooLLM.
 # You can get your free API key signing up at https://pandabi.ai (you can also configure it in your .env file)
-os.environ["PANDASAI_API_KEY"] = "$2a$10$PGQZ6EouXJenV0n9wQz8e.vo1h9W8BBjIL05tdeM3EK4baNBih7jS"
+os.environ["PANDASAI_API_KEY"] = ""
 
 agent = Agent(sales_by_country)
 agent.chat('Which are the top 5 countries by sales?')
