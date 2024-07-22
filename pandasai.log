@@ -223,3 +223,309 @@ result = {'type': 'dataframe', 'value': top_5_countries}
 3         Germany   4100
 1  United Kingdom   3200}
 2024-07-22 15:36:17 [INFO] Executing Step 8: ResultParsing
+2024-07-22 16:52:01 [INFO] Question: 
+2024-07-22 16:52:01 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-07-22 16:52:01 [INFO] Prompt ID: ad5128ec-2dfb-4b6e-98b7-113db6a8ad44
+2024-07-22 16:52:01 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-07-22 16:52:01 [INFO] Executing Step 0: ValidatePipelineInput
+2024-07-22 16:52:01 [INFO] Executing Step 1: CacheLookup
+2024-07-22 16:52:01 [INFO] Executing Step 2: PromptGeneration
+2024-07-22 16:52:02 [INFO] Querying without using training data.
+2024-07-22 16:52:03 [INFO] Querying without using training docs.
+2024-07-22 16:52:03 [INFO] Using prompt: <dataframe>
+dfs[0]:85x18
+Name,Description,Region,Address,Street,Landmark,Location,City,ZIP/Postal Code,State/Province,Country,E-mail ID,Phone No.,Fax No.,Web URL,Language,Site Incharge,Site Manager
+Java Highway,,Kenya,,,,,Mombasa,,,,mbc5vblc@icloud.com,712652530.0,,,,,
+Java Nairobi Hospital,,Kenya,,,,,Kisumu,,,,-9pnu5g55m@aol.com,115026295.0,,,,,
+Java Capital,,Kenya,,,,,Nanyuki,,,,3oj5s-i@icloud.com,,,,,,
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ 
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-07-22 16:52:03 [INFO] Executing Step 3: CodeGenerator
+2024-07-22 16:52:03 [ERROR] Pipeline failed on step 3: Request Failed
+2024-07-22 16:53:24 [INFO] Question: What is the email for java  junction
+2024-07-22 16:53:24 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-07-22 16:53:24 [INFO] Prompt ID: f04f5f08-ae78-4b4b-9323-b858b59b55d2
+2024-07-22 16:53:24 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-07-22 16:53:24 [INFO] Executing Step 0: ValidatePipelineInput
+2024-07-22 16:53:24 [INFO] Executing Step 1: CacheLookup
+2024-07-22 16:53:24 [INFO] Executing Step 2: PromptGeneration
+2024-07-22 16:53:24 [INFO] Querying without using training data.
+2024-07-22 16:53:25 [INFO] Querying without using training docs.
+2024-07-22 16:53:25 [INFO] Using prompt: <dataframe>
+dfs[0]:85x18
+Name,Description,Region,Address,Street,Landmark,Location,City,ZIP/Postal Code,State/Province,Country,E-mail ID,Phone No.,Fax No.,Web URL,Language,Site Incharge,Site Manager
+Java Airportview,,Kenya,,,,,Nanyuki,,,,wsm2fg6@yahoo.com,746622266.0,,,,,
+Java Junction,,Kenya,,,,,Kwale,,,,kmkwz8yvwajc@outlook.com,,,,,,
+Java Nairobi Hospital,,Kenya,,,,,Machakos,,,,nqogdm@outlook.com,719741264.0,,,,,
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ What is the email for java  junction
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-07-22 16:53:25 [INFO] Executing Step 3: CodeGenerator
+2024-07-22 16:53:26 [ERROR] Pipeline failed on step 3: Unable to generate LLM response.
+2024-07-22 16:53:40 [INFO] Question: What is the email for java  junction
+2024-07-22 16:53:40 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-07-22 16:53:40 [INFO] Prompt ID: 3df8a84f-ca8f-4128-9e92-1e537def7331
+2024-07-22 16:53:40 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-07-22 16:53:40 [INFO] Executing Step 0: ValidatePipelineInput
+2024-07-22 16:53:40 [INFO] Executing Step 1: CacheLookup
+2024-07-22 16:53:40 [INFO] Executing Step 2: PromptGeneration
+2024-07-22 16:53:41 [INFO] Querying without using training data.
+2024-07-22 16:53:41 [INFO] Querying without using training docs.
+2024-07-22 16:53:41 [INFO] Using prompt: <dataframe>
+dfs[0]:85x18
+Name,Description,Region,Address,Street,Landmark,Location,City,ZIP/Postal Code,State/Province,Country,E-mail ID,Phone No.,Fax No.,Web URL,Language,Site Incharge,Site Manager
+Java Valleyarcade ,,Kenya,,,,,Nanyuki,,,,jv5z5dg@aol.com,710627666.0,,,,,
+Java Yaya,,Kenya,,,,,Mombasa,,,,cm8-d1rng87@icloud.com,,,,,,
+Java Highway,,Kenya,,,,,Kwale,,,,uimx4b3@yahoo.com,721496832.0,,,,,
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ What is the email for java  junction
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-07-22 16:53:41 [INFO] Executing Step 3: CodeGenerator
+2024-07-22 16:53:42 [ERROR] Pipeline failed on step 3: Unable to generate LLM response.
+2024-07-22 16:55:03 [INFO] Question: What is the email for java  junction
+2024-07-22 16:55:03 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-07-22 16:55:03 [INFO] Prompt ID: 37588a96-7022-4c43-a329-8e4c67153407
+2024-07-22 16:55:03 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-07-22 16:55:03 [INFO] Executing Step 0: ValidatePipelineInput
+2024-07-22 16:55:03 [INFO] Executing Step 1: CacheLookup
+2024-07-22 16:55:03 [INFO] Executing Step 2: PromptGeneration
+2024-07-22 16:55:03 [INFO] Querying without using training data.
+2024-07-22 16:55:04 [INFO] Querying without using training docs.
+2024-07-22 16:55:04 [INFO] Using prompt: <dataframe>
+dfs[0]:85x18
+Name,Description,Region,Address,Street,Landmark,Location,City,ZIP/Postal Code,State/Province,Country,E-mail ID,Phone No.,Fax No.,Web URL,Language,Site Incharge,Site Manager
+Java ABC,,Kenya,,,,,Kwale,,,,yn9vjbymnur@outlook.com,743110177.0,,,,,
+Java Diani,,Kenya,,,,,Nanyuki,,,,mklcltnabz@hotmail.com,,,,,,
+Java Ojijo,,Kenya,,,,,Kericho,,,,r-8h0gf@hotmail.com,711361522.0,,,,,
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ What is the email for java  junction
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-07-22 16:55:04 [INFO] Executing Step 3: CodeGenerator
+2024-07-22 16:55:05 [ERROR] Pipeline failed on step 3: Unable to generate LLM response.
+2024-07-22 16:55:22 [INFO] Question: list top 5
+2024-07-22 16:55:22 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-07-22 16:55:22 [INFO] Prompt ID: dfe8fed1-7f93-4011-80d2-e9c3ab812814
+2024-07-22 16:55:22 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-07-22 16:55:22 [INFO] Executing Step 0: ValidatePipelineInput
+2024-07-22 16:55:22 [INFO] Executing Step 1: CacheLookup
+2024-07-22 16:55:22 [INFO] Executing Step 2: PromptGeneration
+2024-07-22 16:55:23 [INFO] Querying without using training data.
+2024-07-22 16:55:23 [INFO] Querying without using training docs.
+2024-07-22 16:55:23 [INFO] Using prompt: <dataframe>
+dfs[0]:85x18
+Name,Description,Region,Address,Street,Landmark,Location,City,ZIP/Postal Code,State/Province,Country,E-mail ID,Phone No.,Fax No.,Web URL,Language,Site Incharge,Site Manager
+Java Upperhill,,Kenya,,,,,Naivasha,,,,scai3wtrmm4@aol.com,727065766.0,,,,,
+Java Valleyarcade ,,Kenya,,,,,Machakos,,,,iqbah6z@outlook.com,712652530.0,,,,,
+Java Kma,,Kenya,,,,,Kwale,,,,cksam84z9gv6@aol.com,,,,,,
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ list top 5
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-07-22 16:55:23 [INFO] Executing Step 3: CodeGenerator
+2024-07-22 16:55:24 [ERROR] Pipeline failed on step 3: Unable to generate LLM response.
+2024-07-22 16:58:41 [INFO] Question: list top 5
+2024-07-22 16:58:41 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-07-22 16:58:41 [INFO] Prompt ID: d1741035-c443-41a4-b86c-1627623d5e34
+2024-07-22 16:58:41 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-07-22 16:58:41 [INFO] Executing Step 0: ValidatePipelineInput
+2024-07-22 16:58:41 [INFO] Executing Step 1: CacheLookup
+2024-07-22 16:58:41 [INFO] Executing Step 2: PromptGeneration
+2024-07-22 16:58:41 [INFO] Querying without using training data.
+2024-07-22 16:58:42 [INFO] Querying without using training docs.
+2024-07-22 16:58:42 [INFO] Using prompt: <dataframe>
+dfs[0]:10x2
+country,sales
+Germany,2300
+Italy,3200
+Spain,4500
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ list top 5
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-07-22 16:58:42 [INFO] Executing Step 3: CodeGenerator
+2024-07-22 16:58:43 [ERROR] Pipeline failed on step 3: Unable to generate LLM response.

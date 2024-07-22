@@ -1,8 +1,12 @@
 import streamlit as st
 import pandas as pd
-
+from chatbot import query_agent
 
 #type=["*.csv, *xlsx"]
+dataa = pd.DataFrame({
+    "country": ["United States", "United Kingdom", "France", "Germany", "Italy", "Spain", "Canada", "Australia", "Japan", "China"],
+    "sales": [5000, 3200, 2900, 4100, 2300, 2100, 2500, 2600, 4500, 7000]
+})
 
 def navigation():
     st.title("DEEP WRANGLER")
@@ -16,12 +20,15 @@ def navigation():
         
         if uploaded_file:
             st.info(f" You uploaded {uploaded_file.name}")
-            uploaded_file = pd.read_csv(uploaded_file)
-            st.write(uploaded_file)
+            dataframe = pd.read_csv(uploaded_file)
+            st.write(dataframe)
 
-        
+    with st.expander("**Question your data**"):
+        question = st.text_input("Type your question here")
+        if question:
+            st.info(query_agent(dataa, question))
 
 
-        
+     
             
 navigation()
