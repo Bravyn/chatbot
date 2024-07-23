@@ -26,7 +26,7 @@ def navigation():
     with st.expander("**Question your data**"):
         question = st.text_input("Type your question here")
         if question:
-            st.info(query_agent(dataa, question))
+            st.info(query_agent(dataframe, question))
 
 
      

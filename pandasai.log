@@ -529,3 +529,272 @@ If you are asked to plot a chart, use "matplotlib" for charts, save as png.
 Generate python code and return full updated code:
 2024-07-22 16:58:42 [INFO] Executing Step 3: CodeGenerator
 2024-07-22 16:58:43 [ERROR] Pipeline failed on step 3: Unable to generate LLM response.
+2024-07-23 10:05:47 [INFO] Question: list top 4
+2024-07-23 10:05:47 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-07-23 10:05:47 [INFO] Prompt ID: 12a0b146-a537-4ac0-9a44-46a1a0c8027c
+2024-07-23 10:05:47 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-07-23 10:05:47 [INFO] Executing Step 0: ValidatePipelineInput
+2024-07-23 10:05:47 [INFO] Executing Step 1: CacheLookup
+2024-07-23 10:05:47 [INFO] Executing Step 2: PromptGeneration
+2024-07-23 10:05:49 [INFO] Using prompt: <dataframe>
+dfs[0]:10x2
+country,sales
+Canada,4100
+United States,2300
+France,2500
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ list top 4
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-07-23 10:05:49 [INFO] Executing Step 3: CodeGenerator
+2024-07-23 10:05:51 [INFO] Prompt used:
+            None
+            
+2024-07-23 10:05:51 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+top_4_sales = dfs[0].nlargest(4, 'sales')
+
+# Declare result var
+result = { "type": "dataframe", "value": top_4_sales }
+            ```
+            
+2024-07-23 10:05:51 [INFO] Executing Step 4: CachePopulation
+2024-07-23 10:05:52 [INFO] Executing Step 5: CodeCleaning
+2024-07-23 10:05:52 [INFO] 
+Code running:
+```
+top_4_sales = dfs[0].nlargest(4, 'sales')
+result = {'type': 'dataframe', 'value': top_4_sales}
+        ```
+2024-07-23 10:05:52 [INFO] Executing Step 6: CodeExecution
+2024-07-23 10:05:52 [INFO] Executing Step 7: ResultValidation
+2024-07-23 10:05:52 [INFO] Answer: {'type': 'dataframe', 'value':          country  sales
+9          China   7000
+0  United States   5000
+8          Japan   4500
+3        Germany   4100}
+2024-07-23 10:05:52 [INFO] Executing Step 8: ResultParsing
+2024-07-23 10:06:32 [INFO] Question: list top 4
+2024-07-23 10:06:32 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-07-23 10:06:32 [INFO] Prompt ID: 26c7047c-4edd-489c-a3c9-5751773bbde5
+2024-07-23 10:06:32 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-07-23 10:06:32 [INFO] Executing Step 0: ValidatePipelineInput
+2024-07-23 10:06:32 [INFO] Executing Step 1: CacheLookup
+2024-07-23 10:06:32 [INFO] Executing Step 2: PromptGeneration
+2024-07-23 10:06:34 [INFO] Using prompt: <dataframe>
+dfs[0]:85x18
+Name,Description,Region,Address,Street,Landmark,Location,City,ZIP/Postal Code,State/Province,Country,E-mail ID,Phone No.,Fax No.,Web URL,Language,Site Incharge,Site Manager
+Java Kilimani,,Kenya,,,,,Kericho,,,,3gnarcpth8k@aol.com,728600195.0,,,,,
+Java Diani,,Kenya,,,,,Kwale,,,,2wyayx4ce@gmail.com,,,,,,
+Java Karen,,Kenya,,,,,Kisumu,,,,f5x2kow@gmail.com,746622266.0,,,,,
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ list top 4
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-07-23 10:06:34 [INFO] Executing Step 3: CodeGenerator
+2024-07-23 10:06:38 [INFO] Prompt used:
+            None
+            
+2024-07-23 10:06:38 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+dfs = [
+    pd.DataFrame({
+        "Name": ["Java Kilimani", "Java Diani", "Java Karen"],
+        "Description": ["", "", ""],
+        "Region": ["Kenya", "Kenya", "Kenya"],
+        "Address": ["", "", ""],
+        "Street": ["", "", ""],
+        "Landmark": ["", "", ""],
+        "Location": ["", "", ""],
+        "City": ["Kericho", "Kwale", "Kisumu"],
+        "ZIP/Postal Code": ["", "", ""],
+        "State/Province": ["", "", ""],
+        "Country": ["", "", ""],
+        "E-mail ID": ["3gnarcpth8k@aol.com", "2wyayx4ce@gmail.com", "f5x2kow@gmail.com"],
+        "Phone No.": [728600195.0, None, 746622266.0],
+        "Fax No.": ["", "", ""],
+        "Web URL": ["", "", ""],
+        "Language": ["", "", ""],
+        "Site Incharge": ["", "", ""],
+        "Site Manager": ["", "", ""]
+    })
+]
+
+# List top 4 rows
+result = {
+    "type": "dataframe",
+    "value": pd.concat([df.head(4) for df in dfs])
+}
+            ```
+            
+2024-07-23 10:06:38 [INFO] Executing Step 4: CachePopulation
+2024-07-23 10:06:39 [INFO] Executing Step 5: CodeCleaning
+2024-07-23 10:06:39 [INFO] 
+Code running:
+```
+result = {'type': 'dataframe', 'value': pd.concat([df.head(4) for df in dfs])}
+        ```
+2024-07-23 10:06:39 [INFO] Executing Step 6: CodeExecution
+2024-07-23 10:06:39 [INFO] Executing Step 7: ResultValidation
+2024-07-23 10:06:39 [INFO] Answer: {'type': 'dataframe', 'value':          Name  Description Region  Address  Street  Landmark  ...    Phone No. Fax No.  Web URL  Language  Site Incharge Site Manager
+0    360  ABC          NaN  Kenya      NaN     NaN       NaN  ...  700360360.0     NaN      NaN       NaN            NaN          NaN
+1  Java Sarit          NaN  Kenya      NaN     NaN       NaN  ...  714606724.0     NaN      NaN       NaN            NaN          NaN
+2   Java JKIA          NaN  Kenya      NaN     NaN       NaN  ...  715532071.0     NaN      NaN       NaN            NaN          NaN
+3    Java ABC          NaN  Kenya      NaN     NaN       NaN  ...  721496832.0     NaN      NaN       NaN            NaN          NaN
+
+[4 rows x 18 columns]}
+2024-07-23 10:06:39 [INFO] Executing Step 8: ResultParsing
+2024-07-23 10:07:03 [INFO] Question: what's the email for java junction
+2024-07-23 10:07:03 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-07-23 10:07:03 [INFO] Prompt ID: cc4eac2f-5107-4064-9ca3-8c6c21444188
+2024-07-23 10:07:03 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-07-23 10:07:03 [INFO] Executing Step 0: ValidatePipelineInput
+2024-07-23 10:07:03 [INFO] Executing Step 1: CacheLookup
+2024-07-23 10:07:03 [INFO] Executing Step 2: PromptGeneration
+2024-07-23 10:07:05 [INFO] Using prompt: <dataframe>
+dfs[0]:85x18
+Name,Description,Region,Address,Street,Landmark,Location,City,ZIP/Postal Code,State/Province,Country,E-mail ID,Phone No.,Fax No.,Web URL,Language,Site Incharge,Site Manager
+Java Nanyuki,,Kenya,,,,,Nairobi,,,,wp7xbfska@gmail.com,728600195.0,,,,,
+Java Thikaroad,,Kenya,,,,,Kericho,,,,qim2uzhk@aol.com,,,,,,
+Java Sarit,,Kenya,,,,,Machakos,,,,5ip3n2ilk9x_@aol.com,798377247.0,,,,,
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ what's the email for java junction
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-07-23 10:07:05 [INFO] Executing Step 3: CodeGenerator
+2024-07-23 10:07:08 [INFO] Prompt used:
+            None
+            
+2024-07-23 10:07:08 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Update the initial code to extract the email for Java Junction
+emails = []
+for df in dfs:
+    if 'Java Junction' in df['Name'].values:
+        emails.extend(df.loc[df['Name'] == 'Java Junction', 'E-mail ID'].values)
+
+if len(emails) > 0:
+    result = {"type": "string", "value": f"The email for Java Junction is {emails[0]}."}
+else:
+    result = {"type": "string", "value": "Email not found for Java Junction."}
+            ```
+            
+2024-07-23 10:07:08 [INFO] Executing Step 4: CachePopulation
+2024-07-23 10:07:09 [INFO] Executing Step 5: CodeCleaning
+2024-07-23 10:07:09 [INFO] 
+Code running:
+```
+emails = []
+for df in dfs:
+    if 'Java Junction' in df['Name'].values:
+        emails.extend(df.loc[df['Name'] == 'Java Junction', 'E-mail ID'].values)
+if len(emails) > 0:
+    result = {'type': 'string', 'value': f'The email for Java Junction is {emails[0]}.'}
+else:
+    result = {'type': 'string', 'value': 'Email not found for Java Junction.'}
+        ```
+2024-07-23 10:07:09 [INFO] Executing Step 6: CodeExecution
+2024-07-23 10:07:09 [INFO] Executing Step 7: ResultValidation
+2024-07-23 10:07:09 [INFO] Answer: {'type': 'string', 'value': 'The email for Java Junction is junction@javahouseafrica.com.'}
+2024-07-23 10:07:09 [INFO] Executing Step 8: ResultParsing
