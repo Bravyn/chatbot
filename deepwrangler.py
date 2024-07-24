@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 from chatbot import query_agent
 
+st.set_page_config("Deep Wrangler", page_icon="icon.png")
+
 #type=["*.csv, *xlsx"]
 
 
